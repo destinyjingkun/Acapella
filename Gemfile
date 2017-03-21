@@ -37,6 +37,8 @@ gem 'bcrypt', '~> 3.1.7'					#加密
 gem 'pundit', '~> 1.0.1'					#权限验证
 # *--Model类
 gem 'kaminari'										#分页
+# *--测试类
+gem 'rspec', '~>3.5.0'						#BDD测试
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
