@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+# Bootstrap前端库
+source 'https://gems.ruby-china.org'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -14,6 +15,7 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.3.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -30,7 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# *--安全类
+gem 'bcrypt', '~> 3.1.7'					#加密
+gem 'pundit', '~> 1.0.1'					#权限验证
+# *--Model类
+gem 'kaminari'										#分页
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
